@@ -1,0 +1,29 @@
+{
+  "name": "turing-tech-backend-test",
+  "version": "1.0.0",
+  "description": "Turing Tech backend test for full stack position.",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/register": "^7.18.9",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "frameguard": "^4.0.0",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.20",
+    "twilio": "^3.84.1"
+  },
+  "scripts": {
+    "server": "babel src -d dist --copy-files && node dist/index.js",
+    "start": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-plugin-module-resolver": "^3.2.0"
+  }
+}
